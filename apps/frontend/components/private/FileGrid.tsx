@@ -5,25 +5,25 @@ const files = [
     name: 'Product designs',
     detail: 'Folder · 12 items',
     icon: Folder,
-    color: 'text-amber-400',
+    color: 'text-[#ffc278]',
   },
   {
     name: 'Trip photos.jpg',
     detail: 'Image · 4.8 MB',
     icon: FileImage,
-    color: 'text-cyan-400',
+    color: 'text-[#a9d6c3]',
   },
   {
     name: 'Project video.mp4',
     detail: 'Video · 1.2 GB',
     icon: FileVideo,
-    color: 'text-indigo-400',
+    color: 'text-[#c2b2ff]',
   },
   {
     name: 'Meeting notes.pdf',
     detail: 'PDF · 820 KB',
     icon: File,
-    color: 'text-blue-400',
+    color: 'text-[#b7ee45]',
   },
 ];
 
@@ -33,11 +33,11 @@ export default function FileGrid() {
       {files.map(({ name, detail, icon: Icon, color }) => (
         <article
           key={name}
-          className="rounded-2xl border border-slate-800 bg-[#0D1322] p-5 transition hover:border-slate-700"
+          className="rounded-2xl border border-[#24414a] bg-[#10232b] p-5 transition hover:border-[#31505a]"
         >
           <Icon className={`h-7 w-7 ${color}`} />
-          <h3 className="mt-5 truncate font-semibold text-slate-100">{name}</h3>
-          <p className="mt-1 text-xs text-slate-400">{detail}</p>
+          <h3 className="mt-5 truncate font-semibold text-[#f4f0e3]">{name}</h3>
+          <p className="mt-1 text-xs text-[#aebbb7]">{detail}</p>
         </article>
       ))}
     </div>
